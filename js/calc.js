@@ -33,7 +33,35 @@ document.addEventListener("DOMContentLoaded", function () {
        document.getElementById('screen').innerHTML=this.value;
        console.log(this.value);
   });
-} 
+}
+var clickOp = document.querySelectorAll(".operator");
+for (var i = 0; i < clickOp.length; i++) {
+  clickOp[i].addEventListener('click', function (event) {
+     document.getElementById('screen').innerHTML=this.value;
+     console.log(this.value);
+});
+}
+var clickClear = document.querySelectorAll(".buttonClear");
+for (var i = 0; i < clickClear.length; i++) {
+  clickClear[i].addEventListener('click', function (event) {
+     document.getElementById('screen').innerHTML=this.value;
+     console.log(this.value);
+});
+}
+var clickEquals = document.querySelectorAll(".equals");
+for (var i = 0; i < clickEquals.length; i++) {
+  clickEquals[i].addEventListener('click', function (event) {
+     document.getElementById('screen').innerHTML=this.value;
+     console.log(this.value);
+});
+}
+var clickPlus = document.querySelectorAll(".operatorPlus");
+for (var i = 0; i < clickPlus.length; i++) {
+  clickPlus[i].addEventListener('click', function (event) {
+     document.getElementById('screen').innerHTML=this.value;
+     console.log(this.value);
+});
+}
 });
 // var myButton = document.getElementsByTagName("Button");
 // myButton[]. addEventListener("click", function (event) {
